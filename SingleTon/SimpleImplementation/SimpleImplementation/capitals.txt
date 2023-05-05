@@ -1,0 +1,14 @@
+﻿Ho Chi Minh
+500000
+Ha Noi
+5192334
+Gia Lai
+21321
+Vung Tau
+30191
+Seoul
+17500000
+Mexico City
+17400000
+Tokyo
+5000000

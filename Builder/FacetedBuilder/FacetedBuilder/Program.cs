@@ -20,8 +20,8 @@
         //reference !
         protected Person person = new Person();
 
-        public PersonJobBuilder Works => new(person);
-        public PersonAddressBuilder Lives => new(person);
+        public PersonJobBuilder Works => new PersonJobBuilder(person);
+        public PersonAddressBuilder Lives => new PersonAddressBuilder(person);
     }
 
     public class PersonJobBuilder : PersonBuilder
@@ -83,7 +83,9 @@
             var person = pb
                 .Works.At("Fabrikm")
                     .AsA("Developer")
-                    .Earning(123000);
+                    .Earning(123000)
+                .Lives.At("HCM");
+
         }
     }
 }
